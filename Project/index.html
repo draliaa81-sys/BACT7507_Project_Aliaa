@@ -1,0 +1,251 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Egyptian Halal Food – Egyptian Halal Food</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    @import url('style.css');
+  </style>
+</head>
+
+
+<body>
+
+<!-- ─── NAVIGATION ─── -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">
+    <img src="imgs/logo.png" alt="Egyptian Halal Food logo" class="nav-logo-img" />
+    <span class="nav-logo-text">Egyptian<span>Halal Food</span></span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Reserve a Table</a>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+
+
+<!-- ─── HERO ─── -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-ornament"></div>
+  <div class="hero-content">
+    <span class="hero-badge">✦ Halal Certified · Auckland, NZ ✦</span>
+    <h1 class="hero-title">A Taste of<br /><em>Ancient Egypt</em></h1>
+    <p class="hero-sub">Where Cairo meets New Zealand</p>
+    <p class="hero-desc">Authentic Egyptian flavours, halal certified with love. From the iconic Koshari to the legendary Om Ali — every dish is a journey to the banks of the Nile.</p>
+    <div class="hero-btns">
+      <a href="#menu" class="btn-primary">Explore Our Menu</a>
+      <a href="#contact" class="btn-outline">Reserve a Table</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ─── HALAL STRIP ─── -->
+<div class="halal-strip">
+  <div class="halal-item"><div class="halal-dot"></div> 100% Halal Certified</div>
+  <div class="halal-item"><div class="halal-dot"></div> Authentic Egyptian Recipes</div>
+  <div class="halal-item"><div class="halal-dot"></div> Fresh Local Ingredients</div>
+  <div class="halal-item"><div class="halal-dot"></div> Dine In · Takeaway</div>
+</div>
+
+<!-- ─── ABOUT ─── -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap fade-in">
+        <img
+          src="imgs/about-img.png"
+          alt="Egyptian kitchen"
+          class="about-img"
+        />
+        <div class="about-img-accent"></div>
+        <div class="about-badge">
+          <strong>100%</strong>
+          <span>Halal</span>
+        </div>
+      </div>
+      <div class="fade-in">
+        <span class="section-label">Our Story</span>
+        <h2 class="section-title">Egypt's Soul,<br /><em>Auckland's Kitchen</em></h2>
+        <p class="section-desc">
+          Egyptian Halal Food was born from a simple dream: to bring the warmth, colour, and depth of Egyptian home cooking to New Zealand. We believe food is more than sustenance — it is memory, identity, and connection.
+        </p>
+        <p class="section-desc" style="margin-top: 1rem;">
+          Every dish is prepared using traditional recipes passed down through generations, using the finest halal-certified ingredients sourced locally in Auckland and imported directly from Egypt.
+        </p>
+        <div class="about-features">
+          <div class="about-feature">
+            <h4>Halal Certified</h4>
+            <p>All our meat and ingredients are fully halal certified. We are transparent about what goes into every dish.</p>
+          </div>
+          <div class="about-feature">
+            <h4>Family Recipes</h4>
+            <p>Authentic recipes handed down through three generations, unchanged and uncompromised.</p>
+          </div>
+          <div class="about-feature">
+            <h4>Fresh Daily</h4>
+            <p>We prepare everything fresh each morning. No freezing, no shortcuts — just honest cooking.</p>
+          </div>
+          <div class="about-feature">
+            <h4>Warm Welcome</h4>
+            <p>In Egypt, guests are treated like royalty. We carry that tradition into every visit you make.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── MENU ─── -->
+<section id="menu">
+  <div class="container">
+    <div class="menu-header fade-in">
+      <span class="section-label">Our Menu</span>
+      <h2 class="section-title">Dishes from <em>the Heart of Egypt</em></h2>
+      <p class="section-desc">A carefully curated selection of Egypt's most beloved dishes, each carrying centuries of culinary heritage.</p>
+    </div>
+
+    <div class="menu-tabs">
+      <button class="menu-tab active" onclick="filterMenu('all', this)">All Dishes</button>
+      <button class="menu-tab" onclick="filterMenu('main', this)">Main Courses</button>
+      <button class="menu-tab" onclick="filterMenu('appetiser', this)">Appetisers</button>
+      <button class="menu-tab" onclick="filterMenu('dessert', this)">Desserts</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid"></div>
+  </div>
+</section>
+
+<!-- ─── MODAL ─── -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOnOverlay(event)">
+  <div class="modal" id="modal">
+    <img src="" alt="" class="modal-img" id="modalImg" />
+    <div class="modal-body">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="dish-tags" id="modalTags"></div>
+      <h3 class="modal-name" id="modalName"></h3>
+      <p class="modal-arabic" id="modalArabic"></p>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-ingredients">
+        <h5>Key Ingredients</h5>
+        <p id="modalIngredients"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── CONTACT ─── -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="fade-in">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Visit <em>Egyptian Halal Food</em></h2>
+        <p class="section-desc">We would love to welcome you. Make a reservation, ask about our menu, or simply come say hello.</p>
+
+        <div class="contact-info" style="margin-top: 2.5rem;">
+          <div class="contact-item">
+            <h4>Address</h4>
+            <p>123 Queen Street<br />Auckland CBD, Auckland 1010<br />New Zealand</p>
+          </div>
+          <div class="contact-item">
+            <h4>Hours</h4>
+            <p>Monday – Friday: 11am – 10pm<br />Saturday – Sunday: 10am – 11pm</p>
+          </div>
+          <div class="contact-item">
+            <h4>Contact</h4>
+            <p>info@nilehouse.co.nz<br />+64 9 123 4567</p>
+          </div>
+          <div class="contact-item">
+            <h4>Halal Certification</h4>
+            <p>We are fully certified by the<br />New Zealand Islamic Development Trust.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-in">
+        <form class="contact-form" onsubmit="submitForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" placeholder="Your first name" required />
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" placeholder="Your last name" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+64 ..." />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Number of Guests</label>
+              <select>
+                <option>1 person</option>
+                <option>2 people</option>
+                <option selected>3–4 people</option>
+                <option>5–6 people</option>
+                <option>7+ people</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Preferred Date</label>
+              <input type="date" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Message (Optional)</label>
+            <textarea placeholder="Any dietary requirements, special occasions..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Reservation Request</button>
+          <div class="form-success" id="formSuccess">
+            ✓ Thank you! We will be in touch within 24 hours to confirm your reservation.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <span class="footer-logo">Egyptian Halal Food</span>
+  <p class="footer-tagline">Egyptian Halal Food · Auckland, New Zealand</p>
+  <ul class="footer-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <p class="footer-copy">© 2025 Egyptian Halal Food. All rights reserved. · Halal Certified · Made with ❤️ for Auckland</p>
+</footer>
+
+<script src="menu.js"></script>
+</body>
+</html>
+
+

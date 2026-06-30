@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Koshari",
+    "arabic": "كشري مصري",
+    "category": "main",
+    "price": "$18.50",
+    "desc": "Egypt's beloved national dish — a hearty bowl of rice, lentils, and macaroni layered with crispy fried onions, tangy tomato sauce, and a splash of spiced vinegar. A complete meal in one bowl.",
+    "longDesc": "Koshari is the soul of Egyptian street food — a warming, satisfying combination of textures and flavours that has fed generations. Our version follows the traditional Cairo recipe, with slow-cooked lentils, perfectly steamed rice, and a rich tomato-based daqqa sauce spiked with garlic and cumin.",
+    "ingredients": "Rice, green lentils, macaroni, crispy fried onions, tomato sauce, garlic vinegar, chickpeas, cumin",
+    "tags": ["Main Course", "Vegan", "Halal"],
+    "img": "imgs/koshari.png"
+  },
+  {
+    "id": 2,
+    "name": "Molokhia",
+    "arabic": "ملوخية مصرية",
+    "category": "main",
+    "price": "$18.00",
+    "desc": "A deep green, silky stew made from finely chopped jute leaves simmered in a rich chicken broth with garlic and coriander. Served with fluffy white rice and golden roasted chicken.",
+    "longDesc": "Molokhia is one of Egypt's oldest and most beloved dishes — dating back to the time of the Pharaohs. The jute leaves are finely chopped and cooked in a fragrant chicken broth, then finished with a sizzling tarkia of garlic and coriander. Served alongside rice and roasted chicken, it is pure Egyptian comfort.",
+    "ingredients": "Fresh molokhia (jute leaves), free-range chicken, chicken stock, garlic, coriander, white rice",
+    "tags": ["Main Course", "Halal"],
+    "img": "imgs/molokhia.png"
+  },
+  {
+    "id": 3,
+    "name": "Shawarma",
+    "arabic": "شاورما مصرية",
+    "category": "main",
+    "price": "$21.00",
+    "desc": "Tender halal beef strips marinated overnight in a blend of cumin, coriander, and warm spices, served atop fragrant rice with garlic sauce, pickles, and fresh tomato.",
+    "longDesc": "Our Egyptian-style shawarma is slow-cooked to perfection. The beef is marinated for 24 hours in a traditional spice blend, then seared until caramelised. Served the Egyptian way — over rice rather than in a wrap — with our house-made toumiya (garlic sauce) and mukhallalat (pickled vegetables).",
+    "ingredients": "Halal beef, rice, garlic sauce, cumin, coriander, turmeric, tomato, pickled vegetables",
+    "tags": ["Main Course", "Halal"],
+    "img": "imgs/shawarma.png"
+  },
+  {
+    "id": 4,
+    "name": "Taameya",
+    "arabic": "طعمية مصرية",
+    "category": "appetiser",
+    "price": "$12.00",
+    "desc": "Egypt's original falafel — made with fava beans (not chickpeas!) blended with fresh herbs, coriander, spring onions, and sesame seeds, then fried until perfectly golden.",
+    "longDesc": "Unlike the Middle Eastern chickpea falafel, Egyptian Taameya is made from dried fava beans. The beans are soaked overnight and blended with fresh parsley, coriander, spring onions, and spices. Shaped by hand and rolled in sesame seeds before frying, they are crispy outside and vibrantly green inside.",
+    "ingredients": "Dried fava beans, fresh parsley, coriander, spring onions, garlic, cumin, sesame seeds, tahini",
+    "tags": ["Appetiser", "Vegan", "Halal"],
+    "img": "imgs/taameya.png"
+  },
+  {
+    "id": 5,
+    "name": "Om Ali",
+    "arabic": "أم علي",
+    "category": "dessert",
+    "price": "$11.00",
+    "desc": "Egypt's legendary bread pudding — layers of flaky pastry soaked in warm milk and cream, scattered with raisins, coconut, and roasted mixed nuts, baked until golden and bubbling.",
+    "longDesc": "Om Ali is Egypt's most celebrated dessert, often called the Egyptian bread pudding. Named after a legendary cook from the time of the sultans, it combines layers of warm, milk-soaked pastry with a generous scattering of raisins, desiccated coconut, pistachios, almonds, and walnuts. Baked until golden, it is served hot and indulgent.",
+    "ingredients": "Puff pastry sheets, full-cream milk, double cream, raisins, coconut, pistachios, almonds, walnuts, sugar",
+    "tags": ["Dessert", "Vegetarian", "Halal"],
+    "img": "imgs/om-ali.png"
+  },
+  {
+    "id": 6,
+    "name": "Fatta",
+    "arabic": "الفتة المصرية",
+    "category": "main",
+    "price": "$21.00",
+    "desc": "Egypt's ultimate celebratory dish — a comforting bowl of crispy toasted bread, perfectly fluffy rice, and tender meat, all drenched in a tangy, aromatic garlic-vinegar sauce and rich tomato glaze.",
+    "longDesc": "Egyptian Fatta is the centerpiece of Eid celebrations and joyful gatherings — an irresistible layering of rich textures and bold flavors that represents hospitality at its finest. Our recipe honors the timeless tradition, combining slow-simmered, tender beef with crisp, golden-fried flatbread and a deeply fragrant daqqa sauce infused with roasted garlic and white vinegar.",
+    "ingredients": "White rice, toasted Egyptian flatbread, tender beef, garlic-vinegar sauce (daqqa), spiced tomato sauce, aromatic meat broth, ghee",
+    "tags": ["Main Course", "Halal"],
+    "img": "imgs/fatta.png"
+  }
+]
